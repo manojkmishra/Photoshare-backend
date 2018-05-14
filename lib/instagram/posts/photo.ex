@@ -14,6 +14,6 @@ defmodule Instagram.Posts.Photo do
   def changeset(photo, attrs) do
     photo
     |> cast(attrs, [:image_url, :caption])
-    |> validate_required([:image_url, :caption])
+    |> validate_required([:image_url])
   end
 end
