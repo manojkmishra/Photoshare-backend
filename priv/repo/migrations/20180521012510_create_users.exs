@@ -14,5 +14,6 @@ defmodule Instagram.Repo.Migrations.CreateUsers do
     end
 
     create unique_index(:users, [:email])
+    create unique_index(:users, [:facebook_id])
   end
 end
