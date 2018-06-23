@@ -6,7 +6,7 @@ defmodule Instagram.Posts.Photo do
   schema "photos" do
     field :caption, :string
     field :image_url, :string
-
+    has_many :likes, Instagram.Reactions.LikePhoto
     timestamps()
   end
 
